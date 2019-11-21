@@ -1,0 +1,81 @@
+@mixin media($media)
+  @if $media == mobileScreenWidth
+    @media only screen and (min-width: $mobile-width-min) and (max-width: $tablet-width-min)
+      @content
+  @else if $media == tableScreenWidth
+    @media only screen and (min-width: $tablet-width-min) and (max-width: $desktop-width-min)
+      @content
+  @else if $media == desktopScreenWidth
+    @media only screen and (min-width: $desktop-width-min)
+      @content
+
+@mixin borderRadius($radiusPosition, $radiusRounding)
+  @if $radiusPosition == topLeft
+    border-top-left-radius: $radiusRounding
+    -webkit-border-top-left-radius: $radiusRounding
+  @else if $radiusPosition == rightAll
+    border-top-right-radius: $radiusRounding
+    -webkit-border-top-right-radius: $radiusRounding
+    border-bottom-right-radius: $radiusRounding
+    -webkit-border-bottom-right-radius: $radiusRounding
+  @else if $radiusPosition == topRight
+    border-top-right-radius: $radiusRounding
+    -webkit-border-top-right-radius: $radiusRounding
+  @else if $radiusPosition == leftAll
+    border-bottom-right-radius: $radiusRounding
+    -webkit-border-bottom-right-radius: $radiusRounding
+    border-bottom-left-radius: $radiusRounding
+    -webkit-border-bottom-left-radius: $radiusRounding
+  @else if $radiusPosition == bottomRight
+    border-bottom-right-radius: $radiusRounding
+    -webkit-border-bottom-right-radius: $radiusRounding
+  @else if $radiusPosition == bottomLeft
+    border-bottom-left-radius: $radiusRounding
+    -webkit-border-bottom-left-radius: $radiusRounding
+  @else if $radiusPosition == allSides
+    -webkit-border-radius: $radiusRounding
+    -moz-border-radius: $radiusRounding
+    border-radius: $radiusRounding
+
+@mixin width-inner($max-width, $min-width)
+  max-width: $max-width
+  min-width: $min-width
+
+@mixin transition($second)
+  -webkit-transition: $second
+  -moz-transition: $second
+  -ms-transition: $second
+  -o-transition: $second
+  transition: $second
+
+@mixin transform-scale($grade)
+  -webkit-transform: scale($grade)
+  -moz-transform: scale($grade)
+  -ms-transform: scale($grade)
+  -o-transform: scale($grade)
+  transform: scale($grade)
+
+@mixin gridTemplate($templateRows, $templateColumns, $gap)
+  display: grid
+  display: -moz-grid
+  display: -ms-grid
+  grid-template-rows: $templateRows
+  grid-template-columns: $templateColumns
+  grid-gap: $gap
+
+@mixin gridElement($elementRows, $elementColumns)
+  grid-row: $elementRows
+  grid-column: $elementColumns
+
+@mixin background($size, $position, $repeat)
+  background-size: $size
+  -moz-background-size: $size
+  -o-background-size: $size
+  -webkit-background-size: $size
+  background-position: $position
+  background-repeat: $repeat
+
+@mixin box-shadow($params)
+  -webkit-box-shadow: $params
+  -moz-box-shadow: $params
+  box-shadow: $params

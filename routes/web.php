@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('layout');
+})->name('home');
+Route::get('/about-us', function () {
+    return view('page.about', ['title' => 'О нас']);
+})->name('about');
