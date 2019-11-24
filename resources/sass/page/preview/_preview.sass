@@ -1,0 +1,40 @@
+.preview
+  height: 100vh
+  @include gridTemplate(repeat(12, 1fr), repeat(3, 1fr), 10px)
+  overflow: hidden
+
+  &__background
+    background-image: url("/images/background-preview-screen.jpg")
+    height: 100vh
+    width: 150vw
+    left: -20vw
+    position: absolute
+    top: 0
+    background-position: center
+    background-size: 75% 100%
+    background-repeat: no-repeat
+
+    @include media(tableScreenWidth)
+      background-size: cover
+      left: -50vw
+
+    @include media(mobileScreenWidth)
+      left: -50vw
+      background-size: cover
+
+    &:after
+      content: ''
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      position: absolute
+      background-color: rgba(0, 0, 0, 0.7)
+
+  &__company
+    position: relative
+    z-index: 1
+    @include gridElement(6/span 3, 1/span 2)
+
+@import "language/language"
+@import "anchor/anchor"

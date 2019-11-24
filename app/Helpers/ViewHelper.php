@@ -10,10 +10,10 @@ class ViewHelper extends View
     // key is route name
     // value is custom class
     public const HEADER_CLASSES = [
-        'about' => 'red-background',
+        'about' => '--black',
     ];
 
-    public const DEFAULT_HEADER_CLASS = 'default-background';
+    public const DEFAULT_HEADER_CLASS = '--default-color';
 
 
     /**
