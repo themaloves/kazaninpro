@@ -7,7 +7,7 @@
 
         <div class="preview__company">
 
-            <h1 class="heading--big-size">Казанский Инженерный Проект</h1>
+            <h1 class="heading--big-size">{{ __('home.company-name') }}</h1>
 
             <ul>
                 <li>Обследование зданий и сооружений</li>
@@ -20,10 +20,10 @@
         <div class="language">
 
             <div class="language__item">
-                <a class="link--default" href="#">EN</a>
+                <a class="link--default" href="{{ route('home', ['locale' => 'en']) }}">EN</a>
             </div>
             <div class="language__item">
-                <a class="link--default" href="#">RU</a>
+                <a class="link--default" href="{{ route('home', ['locale' => 'ru']) }}">RU</a>
             </div>
 
         </div>
@@ -37,4 +37,6 @@
         </div>
 
     </section>
+
+    @include('parts.menu-categories.menu-categories')
 @endsection

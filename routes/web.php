@@ -11,9 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('page.home');
-})->name('home');
-Route::get('/about-us', function () {
-    return view('page.about', ['title' => 'О нас']);
-})->name('about');
+Route::get('/', 'LocalizationController@redirect');
+
+Route::prefix('{locale}')->middleware('localization')->group(function () {
+    Route::get('/', function () {
+        return view('page.home');
+    })->name('home');
+    Route::get('/about-us', function () {
+        return view('page.about', ['title' => 'О нас']);
+    })->name('about');
+});
