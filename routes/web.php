@@ -12,6 +12,8 @@
 */
 
 Route::get('/', 'LocalizationController@redirect');
+Route::get('admin', 'Orchid\Platform\Http\Controllers\Systems\IndexController@index')
+    ->name('platform.index')->middleware('platform');
 
 Route::prefix('{locale}')->middleware('localization')->group(function () {
     Route::get('/', function () {
