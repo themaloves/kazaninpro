@@ -70,7 +70,7 @@
             <ul class="nav">
 
                 <li class="nav__item">
-                    <a class="link--default" href="#">{{ __('home.admin-path.object') }}</a>
+                    <a class="link--default" href="{{ route('objects') }}">{{ __('home.admin-path.object') }}</a>
                 </li>
 
                 <li class="nav__item">
@@ -78,7 +78,7 @@
                 </li>
 
                 <li class="nav__item">
-                    <a class="link--default" href="#">{{ __('home.admin-path.contacts') }}</a>
+                    <a class="link--default" href="{{ route('contacts') }}">{{ __('home.admin-path.contacts') }}</a>
                 </li>
 
             </ul>

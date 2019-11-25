@@ -1,0 +1,13 @@
+.footer
+  align-items: center
+  justify-content: center
+  display: flex
+  background-color: #373F43
+
+  &__description
+    position: relative
+    max-width: 1200px
+    @include gridTemplate(1fr, repeat(3, 1fr), 10px)
+
+  &__address
+    @include gridTemplate(1fr 1fr, 1fr, 10px)

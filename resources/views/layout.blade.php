@@ -10,11 +10,11 @@
 <body>
 
     <main class="inner-wrap">
-    @include('layout.header')
+        @include('layout.header')
         @yield('content')
     </main>
+        @include('layout.footer')
 
-    @include('layout.footer')
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

@@ -18,20 +18,15 @@ class Localization
      */
     public function handle($request, Closure $next)
     {
-        URL::defaults(['locale' => config('app.locale')]);
-
         $locale = $request->route('locale');
 
         if (!in_array($locale, config('app.locales'))) {
-            return redirect()
-                ->route(
-                    Route::currentRouteName(),
-                    array_merge($request->all(), [
-                        'locale' => $request->session()->get('locale') ?? config('app.locale')
-                    ])
-                );
+            return redirect()->route(
+                Route::currentRouteName(),
+                array_merge($request->all(), ['locale' => $request->session()->get('locale') ?? config('app.locale')]));
         }
 
+        URL::defaults(['locale' => $locale]);
         $request->session()->put('locale', $locale);
 
         $request->setLocale($locale);
