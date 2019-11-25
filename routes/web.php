@@ -20,6 +20,12 @@ Route::prefix('{locale}')->middleware('localization')->group(function () {
         return view('page.home');
     })->name('home');
     Route::get('/about-us', function () {
-        return view('page.about', ['title' => 'О нас']);
+        return view('page.about');
     })->name('about');
+    Route::get('/objects', function () {
+        return view('page.objects');
+    })->name('objects');
+    Route::get('/contacts', function () {
+       return view('page.contacts');
+    })->name('contacts');
 });

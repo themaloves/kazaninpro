@@ -1,0 +1,40 @@
+.contacts
+  @include gridTemplate(repeat(6, 1fr), 1fr, 10px)
+  height: 100vh
+  overflow: hidden
+
+  &__background
+    background-image: url("/images/background-contacts.jpg")
+    height: 100%
+    width: 100%
+    position: absolute
+    left: 0
+    top: 0
+    background-size: cover
+    background-position: center
+
+    &:after
+      content: ''
+      background-color: black
+      height: 100%
+      width: 100%
+      position: absolute
+      left: 0
+      top: 0
+      opacity: 0.7
+
+  &__director
+    @include gridElement(2, 1)
+    position: relative
+
+  &__engineer
+    @include gridElement(3, 1)
+    position: relative
+
+  &__address
+    @include gridElement(4, 1)
+    position: relative
+
+  &__email
+    @include gridElement(5, 1)
+    position: relative
