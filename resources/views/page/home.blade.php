@@ -10,9 +10,9 @@
             <h1 class="heading--big-size">{{ __('home.company-name') }}</h1>
 
             <ul>
-                <li>Обследование зданий и сооружений</li>
-                <li>Усиление, капитальный ремонт и реконструкция</li>
-                <li>Проектирование новых объектов</li>
+                <li>{{ __('home.company-description.inspection-of-buildings-and-structures') }}</li>
+                <li>{{ __('home.company-description.reinforcement-overhaul-and-reconstruction') }}</li>
+                <li>{{ __('home.company-description.designing-new-facilities') }}</li>
             </ul>
 
         </div>

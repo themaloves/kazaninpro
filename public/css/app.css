@@ -11482,7 +11482,6 @@ readers do not read off random characters that represent icons */
 body {
   margin: 0;
   overflow-x: hidden;
-  background-color: #000;
   color: #fff;
 }
 
@@ -11778,5 +11777,198 @@ body {
   border: none;
   padding: 0;
   cursor: pointer;
+}
+
+.menu-categories {
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  display: -moz-grid;
+  display: -ms-grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 0;
+}
+
+.designing-new-facilities {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-clip-path: polygon(100% 100%, 100% 0, 20% 0%, 0% 100%);
+  grid-row: 1/span 10;
+  grid-column: 7/span 4;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+  color: #fff;
+}
+
+.designing-new-facilities:hover .designing-new-facilities__background {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.designing-new-facilities:hover .designing-new-facilities__background:after {
+  opacity: 0;
+}
+
+.designing-new-facilities:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.designing-new-facilities__background {
+  background-image: url("/images/menu-categories/designing_new_facilities.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.designing-new-facilities__background:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.designing-new-facilities__title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -140px;
+}
+
+.inspection-of-buildings-and-structures {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-clip-path: polygon(100% 0%, 100% 0%, 0% 0%, 0% 100%, 75% 100%);
+  grid-row: 1/span 10;
+  grid-column: 1/span 4;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+  color: #fff;
+}
+
+.inspection-of-buildings-and-structures:hover .inspection-of-buildings-and-structures__background {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.inspection-of-buildings-and-structures:hover .inspection-of-buildings-and-structures__background:after {
+  opacity: 0;
+}
+
+.inspection-of-buildings-and-structures:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inspection-of-buildings-and-structures__background {
+  background-image: url("/images/menu-categories/inspection_of_buildings_and_structure.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inspection-of-buildings-and-structures__background:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inspection-of-buildings-and-structures__title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -230px;
+}
+
+.reinforcement-overhaul-and-reconstruction {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  grid-row: 1/span 10;
+  grid-column: 4/span 4;
+  -webkit-clip-path: polygon(80% 100%, 100% 0%, 20% 0%, 0% 100%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+  color: #fff;
+}
+
+.reinforcement-overhaul-and-reconstruction:hover .reinforcement-overhaul-and-reconstruction__background {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.reinforcement-overhaul-and-reconstruction:hover .reinforcement-overhaul-and-reconstruction__background:after {
+  opacity: 0;
+}
+
+.reinforcement-overhaul-and-reconstruction:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.reinforcement-overhaul-and-reconstruction__background {
+  background-image: url("/images/menu-categories/reinforcement_overhaul_and_reconstruction.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.reinforcement-overhaul-and-reconstruction__background:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.reinforcement-overhaul-and-reconstruction__title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
 }
 
