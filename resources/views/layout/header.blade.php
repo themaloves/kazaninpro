@@ -70,15 +70,15 @@
             <ul class="nav">
 
                 <li class="nav__item">
-                    <a class="link--default" href="#">Объекты</a>
+                    <a class="link--default" href="#">{{ __('home.admin-path.object') }}</a>
                 </li>
 
                 <li class="nav__item">
-                    <a class="link--default" href="{{ route('about') }}">О нас</a>
+                    <a class="link--default" href="{{ route('about') }}">{{ __('home.admin-path.about-us') }}</a>
                 </li>
 
                 <li class="nav__item">
-                    <a class="link--default" href="#">Контакты</a>
+                    <a class="link--default" href="#">{{ __('home.admin-path.contacts') }}</a>
                 </li>
 
             </ul>
