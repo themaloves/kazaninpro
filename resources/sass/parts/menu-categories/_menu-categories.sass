@@ -1,13 +1,20 @@
 .menu-categories
-  height: 100vh
-  position: static
+    height: 100vh
+    position: static
 
-  &__section
-    position: absolute
-    left: 0
-    height: 100%
-    width: 100%
-    @include gridTemplate(repeat(10, 1fr), repeat(10, 1fr), 0)
+    &__section
+        position: absolute
+        left: 0
+        height: 100%
+        width: 100%
+
+        @include gridTemplate(repeat(10, 1fr), repeat(10, 1fr), 0)
+
+        @include media(tableScreenWidth)
+            @include gridTemplate(repeat(3, 1fr), 1fr, 0)
+
+        @include media(mobileScreenWidth)
+            @include gridTemplate(repeat(3, 1fr), 1fr, 0)
 
 @import "designing-new-facilities/index"
 @import "inspection-of-buildings-and-structures/index"

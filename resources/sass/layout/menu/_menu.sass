@@ -1,35 +1,7 @@
 .menu
 
-  &--default-color
-    color: map_get($colors, "white")
+    &--default-color
+        color: map_get($colors, "white")
 
-  &--black
-    color: map_get($colors, "black")
-
-  &__logo
-    @include gridElement(1, 1)
-
-    @include media(tableScreenWidth)
-      @include gridElement(1, 1)
-
-    @include media(mobileScreenWidth)
-      @include gridElement(1, 1)
-
-  &__nav-block
-    @include gridElement(1, 3/span 2)
-    align-self: center
-
-    @include media(tableScreenWidth)
-      @include gridElement(2, 1/span 2)
-      visibility: hidden
-
-    @include media(mobileScreenWidth)
-      @include gridElement(2, 1/span 2)
-      visibility: hidden
-
-  &__button
-    text-align: end
-    align-self: center
-
-    @include media(desktopScreenWidth)
-      visibility: hidden
+    &--black
+        color: map_get($colors, "black")

@@ -1,18 +1,27 @@
 .header
-  z-index: 1
-  position: relative
-
-  &__section
-    @include gridTemplate(1fr, repeat(4, 1fr), 0)
-    padding: 40px 0 0
+    z-index: 9999
     position: absolute
     width: 100%
-
-    @include media(tableScreenWidth)
-      @include gridTemplate(1fr auto, 1fr 1fr, 10px)
+    padding: 40px 0 0
 
     @include media(mobileScreenWidth)
-      @include gridTemplate(1fr auto, 1fr auto, 10px)
+        padding: 10px 0 0
+
+    &__section
+        display: flex
+        align-items: center
+
+        @include media(mobileScreenWidth)
+            display: block
+
+    &__site-map
+        flex-grow: 1
+
+    &__logo
+        width: 210px
+
+        @include media(mobileScreenWidth)
+            margin: 0 auto
 
 @import "menu/menu"
 @import "logo/logo"

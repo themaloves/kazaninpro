@@ -28,4 +28,5 @@ Route::prefix('{locale}')->middleware('localization')->group(function () {
     Route::get('/contacts', function () {
        return view('page.contacts');
     })->name('contacts');
+
 });

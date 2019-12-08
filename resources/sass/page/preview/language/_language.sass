@@ -1,8 +1,11 @@
 .language
-  z-index: 1
-  align-self: center
-  @include gridElement(12, 1)
+    z-index: 1
+    align-self: center
+    @include gridElement(12, 1)
 
-  &__item
-    display: inline
-    margin: 0 10px 0 0
+    @include media(mobileScreenWidth)
+        @include gridElement(11/span 2, 1)
+
+    &__item
+        display: inline
+        margin: 0 10px 0 0

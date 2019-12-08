@@ -1,0 +1,129 @@
+.about_us
+    color: #000
+    padding: 100px 0 0
+
+    .staff
+        padding: 50px 0
+        @include gridTemplate(repeat(3, 1fr), repeat(12, 1fr), 10px)
+
+        @include media(tableScreenWidth)
+            grid-auto-rows: auto
+            grid-template-columns: auto
+            grid-gap: 10px
+
+        @include media(mobileScreenWidth)
+            grid-auto-rows: auto
+            grid-template-columns: auto
+            grid-gap: 10px
+
+        &__images-box
+            max-width: 500px
+            @include gridElement(1/span 3, 1/span 5)
+
+            @include media(tableScreenWidth)
+                max-width: 100%
+                @include gridElement(2/span 7, 1)
+
+            @include media(mobileScreenWidth)
+                max-width: 100%
+                @include gridElement(2/span 4, 1)
+
+        &__title
+            text-align: center
+            align-self: center
+            @include gridElement(1, 6/span 7)
+
+            @include media(tableScreenWidth)
+                @include gridElement(1, 1)
+
+            @include media(mobileScreenWidth)
+                @include gridElement(1, 1)
+
+        &__description
+            @include gridElement(2/span 2, 6/span 7)
+            line-height: 27px
+
+            @include media(tableScreenWidth)
+                @include gridElement(9/span 3, 1)
+
+            @include media(mobileScreenWidth)
+                @include gridElement(6/span 8, 1)
+
+
+    .company
+        @include gridTemplate(repeat(3, 1fr), repeat(12, 1fr), 10px)
+
+        @include media(tableScreenWidth)
+            @include gridTemplate(repeat(10, 1fr), 1fr, 10px)
+
+        @include media(mobileScreenWidth)
+            @include gridTemplate(repeat(19, 1fr), 1fr, 10px)
+
+        &__description
+            @include gridElement(1/span 3, 1/span 7)
+            line-height: 27px
+
+            @include media(tableScreenWidth)
+                @include gridElement(7/span 4, 1)
+
+            @include media(mobileScreenWidth)
+                @include gridElement(5/span 15, 1)
+
+
+        &__images-box
+            max-width: 500px
+            @include gridElement(1/span 3, 8/span 5)
+
+            @include media(tableScreenWidth)
+                @include gridElement(1/span 6, 1)
+                max-width: 100%
+
+            @include media(mobileScreenWidth)
+                @include gridElement(1/span 4, 1)
+                max-width: 100%
+
+    .geography-project
+
+        &__title
+            padding: 70px 0 20px
+            text-align: center
+
+    .activity
+        margin-top: 50px
+        text-align: center
+
+        &__head-title
+            padding: 0 0 20px
+
+        &__items-wrap
+            display: flex
+            padding-top: 15px
+
+            @include media(mobileScreenWidth)
+                display: block
+
+        &__items
+            flex-grow: 1
+
+            @include media(mobileScreenWidth)
+                display: inline-block
+                padding: 10px 0
+
+        &__icon
+            background-color: #363f42
+            -webkit-border-radius: 50%
+            -moz-border-radius: 50%
+            border-radius: 50%
+            width: 60px
+            height: 60px
+            color: map_get($colors, "white")
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 30px
+            margin: 0 auto
+
+        &__title
+            width: 120px
+            margin: 0 auto
+            padding-top: 15px

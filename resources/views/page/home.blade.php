@@ -3,6 +3,7 @@
 @section('content')
     <section class="preview">
 
+
         <div class="preview__background"></div>
 
         <div class="preview__company">

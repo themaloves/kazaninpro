@@ -1,13 +1,16 @@
 .anchor
-  z-index: 1
-  @include gridElement(12, 2)
-  text-align: center
-  align-self: center
+    z-index: 1
+    @include gridElement(12, 2)
+    text-align: center
+    align-self: center
 
-  &__button
-    font-size: 50px
-    background-color: #00ffff00
-    color: white
-    border: none
-    padding: 0
-    cursor: pointer
+    @include media(mobileScreenWidth)
+        @include gridElement(11/span 2, 2)
+
+    &__button
+        font-size: 50px
+        background-color: #00ffff00
+        color: white
+        border: none
+        padding: 0
+        cursor: pointer
