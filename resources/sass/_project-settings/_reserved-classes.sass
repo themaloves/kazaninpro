@@ -1,43 +1,72 @@
 .clearfix
-  clear: both
+    clear: both
 
 .inner
-  &-wrap
-    @include width-inner($desktop-width-min, $mobile-width-min)
-    margin: 0 auto
-    overflow: hidden
+    &-wrap
+        @include width-inner($desktop-width-min, $mobile-width-min)
+        margin: 0 auto
+        overflow: hidden
 
-    @include media(tableScreenWidth)
-      padding: 0 20px 0 20px
+        @include media(tableScreenWidth)
+            padding: 0 20px 0 20px
 
-    @include media(mobileScreenWidth)
-      padding: 0 10px 0 10px
+        @include media(mobileScreenWidth)
+            padding: 0 10px 0 10px
+
+.menu--default-color
+    & .link
+        &--default
+            color: map_get($colors, "white")
+            text-decoration: none
+    .fil0
+        fill: map_get($colors, "white")
+        fill-rule: nonzero
+
+.menu--black
+    & .link
+        &--default
+            color: map_get($colors, "black")
+            text-decoration: none
+        .fil0
+            color: map_get($colors, "black")
+            fill-rule: nonzero
 
 .link
-  &--default
-    color: map_get($colors, "white")
-    text-decoration: none
+    &--default
+        color: map_get($colors, "white")
+        text-decoration: none
 
 .heading
-  margin: 0
-  &--big-size
-    font-size: 40px
     margin: 0
-  &--normal-size
-    font-size: 24px
-    margin: 0
-  &--small-size
-    font-size: 18px
-    margin: 0
+    &--big-size
+        font-size: 40px
+        margin: 0
+    &--normal-size
+        font-size: 24px
+        margin: 0
+    &--small-size
+        font-size: 18px
+        margin: 0
 
 .subtitle
-  margin: 0
-  &--big-size
-    font-size: 36px
     margin: 0
-  &--normal-size
-    font-size: 20px
-    margin: 0
-  &--small-size
-    font-size: 16px
-    margin: 0
+    &--big-size
+        font-size: 36px
+        margin: 0
+    &--normal-size
+        font-size: 20px
+        margin: 0
+    &--small-size
+        font-size: 16px
+        margin: 0
+
+.paragraph
+    &--big-size
+        font-size: 24px
+        margin: 0
+    &--normal-size
+        font-size: 18px
+        margin: 0
+    &--small-size
+        font-size: 16px
+        margin: 0

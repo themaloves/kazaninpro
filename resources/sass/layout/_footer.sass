@@ -1,13 +1,25 @@
 .footer
-  align-items: center
-  justify-content: center
-  display: flex
-  background-color: #373F43
+    background-color: #373F43
+    padding: 20px 0
 
-  &__description
-    position: relative
-    max-width: 1200px
-    @include gridTemplate(1fr, repeat(3, 1fr), 10px)
+    @include media(mobileScreenWidth)
+        padding: 0
 
-  &__address
-    @include gridTemplate(1fr 1fr, 1fr, 10px)
+    &__information
+        display: flex
+
+        @include media(mobileScreenWidth)
+            display: inline-block
+
+    &__address
+        flex-grow: 1
+
+    &__director
+        flex-grow: 1
+
+    &__engineer
+        flex-grow: 1
+
+    &__description
+        color: #9b9fa1
+        line-height: 22px
