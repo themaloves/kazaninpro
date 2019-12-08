@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+use App\Orchid\Screens\Card\CardEditScreen;
+use App\Orchid\Screens\Card\CardListScreen;
 use App\Orchid\Screens\Examples\ExampleFieldsScreen;
 use App\Orchid\Screens\Examples\ExampleLayoutsScreen;
 use App\Orchid\Screens\Examples\ExampleScreen;
@@ -39,3 +41,6 @@ $this->router->screen('example', ExampleScreen::class)->name('platform.example')
 $this->router->screen('example-fields', ExampleFieldsScreen::class)->name('platform.example.fields');
 $this->router->screen('example-layouts', ExampleLayoutsScreen::class)->name('platform.example.layouts');
 //Route::screen('/dashboard/screen/idea', 'Idea::class','platform.screens.idea');
+
+$this->router->screen('card/{card?}', CardEditScreen::class)->name('platform.card.edit');
+$this->router->screen('cards', CardListScreen::class)->name('platform.card.list');

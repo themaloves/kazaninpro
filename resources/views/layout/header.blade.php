@@ -61,7 +61,7 @@
                 <ul class="nav">
 
                     <li class="nav__item">
-                        <a class="link--default" href="{{ route('objects') }}">{{ __('home.admin-path.object') }}</a>
+                        <a class="link--default" href="{{ route('object.list') }}">{{ __('home.admin-path.object') }}</a>
                     </li>
 
                     <li class="nav__item">

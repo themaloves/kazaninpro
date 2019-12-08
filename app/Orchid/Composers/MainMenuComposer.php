@@ -77,6 +77,11 @@ class MainMenuComposer
                 ItemMenu::label('Empty sub item 2')
                     ->icon('icon-heart')
                     ->title('Separate')
+            )
+            ->add(Menu::MAIN,
+                ItemMenu::label('Cards')
+                    ->icon('icon-grid')
+                    ->route('platform.card.list')
             );
     }
 }

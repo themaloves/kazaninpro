@@ -2,7 +2,7 @@
 
     <div class="menu-categories__section">
 
-        <a href="#" class="inspection-of-buildings-and-structures">
+        <a href="{{ route('object.show', ['object' => 'inspection-of-buildings-and-structures']) }}" class="inspection-of-buildings-and-structures">
 
             <div class="inspection-of-buildings-and-structures__background"></div>
 
@@ -12,7 +12,7 @@
 
         </a>
 
-        <a href="#" class="reinforcement-overhaul-and-reconstruction">
+        <a href="{{ route('object.show', ['object' => 'reinforcement-overhaul-and-reconstruction']) }}" class="reinforcement-overhaul-and-reconstruction">
 
             <div class="reinforcement-overhaul-and-reconstruction__background"></div>
 
@@ -22,7 +22,7 @@
 
         </a>
 
-        <a href="#" class="designing-new-facilities">
+        <a href="{{ route('object.show', ['object' => 'designing-new-facilities']) }}" class="designing-new-facilities">
 
             <div class="designing-new-facilities__background"></div>
 

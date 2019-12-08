@@ -16,17 +16,13 @@ Route::get('admin', 'Orchid\Platform\Http\Controllers\Systems\IndexController@in
     ->name('platform.index')->middleware('platform');
 
 Route::prefix('{locale}')->middleware('localization')->group(function () {
-    Route::get('/', function () {
-        return view('page.home');
-    })->name('home');
-    Route::get('/about-us', function () {
-        return view('page.about');
-    })->name('about');
-    Route::get('/objects', function () {
-        return view('page.objects');
-    })->name('objects');
-    Route::get('/contacts', function () {
-       return view('page.contacts');
-    })->name('contacts');
+    Route::view('/', 'page.home')->name('home');
+    Route::view('/about-us', 'page.about')->name('about');
+    Route::view('/contacts', 'page.contacts')->name('contacts');
 
+    Route::prefix('objects')->name('object.')->group(function () {
+        Route::view('/', 'page.object.list')->name('list');
+        Route::get('{object}', 'ObjectController@show')->name('show');
+        Route::get('{object}/{card}', 'ObjectController@showCard')->name('show-card');
+    });
 });
