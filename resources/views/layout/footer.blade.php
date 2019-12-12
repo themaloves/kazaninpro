@@ -3,33 +3,37 @@
     <div class="footer__information inner-wrap">
 
         <div class="footer__address">
-            <h2 class="footer__title">Адрес</h2>
+            <h2 class="footer__title">{{ __('contacts.address.name') }}</h2>
             <p class="footer__description">
-                Республика Татарстан, г. Казань,
+                {{ __('contacts.address.location') }}
                 <br>
-                ул. Жуковского, д. 9
+                {{ __('contacts.address.street') }}
             </p>
         </div>
 
         <div class="footer__director">
-            <h2 class="footer__title">Директор:</h2>
+            <h2 class="footer__title">{{ __('contacts.director.name') }}:</h2>
             <p class="footer__description">
-                Тризна Роман Петрович
+                {{ __('contacts.director.last-name') }}
+                {{ __('contacts.director.first-name') }}
+                {{ __('contacts.director.middle-name') }}
                 <br>
-                +7 (917) 230 31 09
+                {{ __('contacts.director.tel') }}
                 <br>
-                kazaninpro@mail.ru
+                {{ __('contacts.mail.email') }}
             </p>
         </div>
 
         <div class="footer__engineer">
-            <h2 class="footer__title">Главный инженер:</h2>
+            <h2 class="footer__title">{{ __('contacts.engineer.name') }}:</h2>
             <p class="footer__description">
-                Гиздатуллин Антон Ринатович
+                {{ __('contacts.engineer.last-name') }}
+                {{ __('contacts.engineer.first-name') }}
+                {{ __('contacts.engineer.middle-name') }}
                 <br>
-                +7 (917) 287 44 66
+                {{ __('contacts.engineer.tel') }}
                 <br>
-                kazaninpro@mail.ru
+                {{ __('contacts.mail.email') }}
             </p>
         </div>
 

@@ -7,7 +7,7 @@
             <div class="inspection-of-buildings-and-structures__background"></div>
 
             <div class="inspection-of-buildings-and-structures__title">
-                <h2>Обследование зданий и сооружений</h2>
+                <h2>{{ __('home.company-description.inspection-of-buildings-and-structures') }}</h2>
             </div>
 
         </a>
@@ -17,7 +17,7 @@
             <div class="reinforcement-overhaul-and-reconstruction__background"></div>
 
             <div class="reinforcement-overhaul-and-reconstruction__title">
-                <h2>Усиление, капитальный ремонт и реконструкция</h2>
+                <h2>{{ __('home.company-description.reinforcement-overhaul-and-reconstruction') }}</h2>
             </div>
 
         </a>
@@ -27,7 +27,7 @@
             <div class="designing-new-facilities__background"></div>
 
             <div class="designing-new-facilities__title">
-                <h2>Проектирование новых объектов</h2>
+                <h2>{{ __('home.company-description.designing-new-facilities') }}</h2>
             </div>
 
         </a>
