@@ -1,6 +1,6 @@
 const mix = require('laravel-mix');
 
-mix.browserSync('kazaninpro.test')
+mix.browserSync('kazaninpro.test');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
