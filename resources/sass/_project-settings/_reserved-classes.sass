@@ -3,15 +3,18 @@
 
 .inner
     &-wrap
+        display: block
+
+    &-content
         @include width-inner($desktop-width-min, $mobile-width-min)
         margin: 0 auto
-        overflow: hidden
+        z-index: 1
 
         @include media(tableScreenWidth)
-            padding: 0 20px 0 20px
+            padding: 0 32px
 
         @include media(mobileScreenWidth)
-            padding: 0 10px 0 10px
+            padding: 0 8px
 
 .menu--default-color
     & .link
@@ -70,3 +73,9 @@
     &--small-size
         font-size: 16px
         margin: 0
+
+.spacer
+    flex: 1
+
+.iteration-lists
+    @extend .regular
