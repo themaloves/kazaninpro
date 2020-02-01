@@ -1,8 +1,8 @@
 <footer class="footer">
 
-    <div class="footer__information inner-wrap">
+    <div class="footer__items inner-content">
 
-        <div class="footer__address">
+        <div class="footer__item">
             <h2 class="footer__title">{{ __('contacts.address.name') }}</h2>
             <p class="footer__description">
                 {{ __('contacts.address.location') }}
@@ -11,7 +11,7 @@
             </p>
         </div>
 
-        <div class="footer__director">
+        <div class="footer__item">
             <h2 class="footer__title">{{ __('contacts.director.name') }}:</h2>
             <p class="footer__description">
                 {{ __('contacts.director.last-name') }}
@@ -24,7 +24,7 @@
             </p>
         </div>
 
-        <div class="footer__engineer">
+        <div class="footer__item">
             <h2 class="footer__title">{{ __('contacts.engineer.name') }}:</h2>
             <p class="footer__description">
                 {{ __('contacts.engineer.last-name') }}
