@@ -1,21 +1,101 @@
 .menu-categories
     height: 100vh
-    position: static
+    position: relative
 
-    &__section
-        position: absolute
-        left: 0
+    &__items
         height: 100%
         width: 100%
 
         @include gridTemplate(repeat(10, 1fr), repeat(10, 1fr), 0)
 
-        @include media(tableScreenWidth)
+        @include media(table)
             @include gridTemplate(repeat(3, 1fr), 1fr, 0)
 
-        @include media(mobileScreenWidth)
+        @include media(mobile)
             @include gridTemplate(repeat(3, 1fr), 1fr, 0)
 
-@import "designing-new-facilities/index"
-@import "inspection-of-buildings-and-structures/index"
-@import "reinforcement-overhaul-and-reconstruction/index"
+    &__item
+        height: 100%
+        width: 100%
+        transition: 0.3s
+        overflow: hidden
+        display: flex
+        position: relative
+        align-items: center
+        justify-content: center
+        text-align: center
+
+        @include media(table)
+            @include gridElement(2, 1)
+            position: relative
+
+        @include media(mobile)
+            @include gridElement(2, 1)
+            position: relative
+
+
+        &:after
+            content: ''
+            position: absolute
+            height: 100%
+            width: 100%
+            background-color: rgba(0, 0, 0, 0.7)
+            transition: 0.3s
+
+        &:before
+            content: ''
+            position: absolute
+            background-size: cover
+            background-position: center
+            height: 100%
+            transition: 0.3s
+            width: 100%
+
+        &:nth-child(1)
+            @include gridElement(1/span 10, 1/span 4)
+            padding-right: calc(100% - 83%)
+
+            &:before
+                background-image: url("/images/menu-categories/inspection_of_buildings_and_structure.jpg")
+
+            @include media(table)
+                @include gridElement(1, 1)
+                padding: 0
+
+        &:nth-child(2)
+            @include gridElement(1/span 10, 4/span 4)
+            padding: 20%
+
+            &:before
+                background-image: url("/images/menu-categories/reinforcement_overhaul_and_reconstruction.jpg")
+
+            @include media(table)
+                @include gridElement(2, 1)
+                padding: 0
+
+        &:nth-child(3)
+            @include gridElement(1/span 10, 7/span 4)
+            padding-left: calc(100% - 90%)
+
+            &:before
+                background-image: url("/images/menu-categories/designing_new_facilities.jpg")
+
+            @include media(table)
+                @include gridElement(3, 1)
+                padding: 0
+
+
+        @include media(onlyDesktop)
+            &:nth-child(1)
+                -webkit-clip-path: polygon(91% 0%, 100% 0%, 0% 0%, 0% 100%, 75% 100%)
+
+            &:nth-child(2)
+                -webkit-clip-path: polygon(80% 100%, 96% 0%, 15% 0%, 0% 100%)
+
+            &:nth-child(3)
+                -webkit-clip-path: polygon(100% 100%, 100% 0, 20% 0%, 5% 100%)
+
+    &__title
+        @extend .h3
+        position: relative
+        z-index: 1

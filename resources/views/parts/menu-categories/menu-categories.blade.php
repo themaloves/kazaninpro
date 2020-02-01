@@ -1,34 +1,22 @@
 <section class="menu-categories">
 
-    <div class="menu-categories__section">
+    <div class="menu-categories__items">
 
-        <a href="{{ route('object.show', ['object' => 'inspection-of-buildings-and-structures']) }}" class="inspection-of-buildings-and-structures">
+        <a href="{{ route('object.show', ['object' => 'inspection-of-buildings-and-structures']) }}" class="menu-categories__item inspection-of-buildings-and-structures">
 
-            <div class="inspection-of-buildings-and-structures__background"></div>
-
-            <div class="inspection-of-buildings-and-structures__title">
-                <h2>{{ __('home.company-description.inspection-of-buildings-and-structures') }}</h2>
-            </div>
+            <h2 class="menu-categories__title">{{ __('home.company-description.inspection-of-buildings-and-structures') }}</h2>
 
         </a>
 
-        <a href="{{ route('object.show', ['object' => 'reinforcement-overhaul-and-reconstruction']) }}" class="reinforcement-overhaul-and-reconstruction">
+        <a href="{{ route('object.show', ['object' => 'reinforcement-overhaul-and-reconstruction']) }}" class="menu-categories__item reinforcement-overhaul-and-reconstruction">
 
-            <div class="reinforcement-overhaul-and-reconstruction__background"></div>
-
-            <div class="reinforcement-overhaul-and-reconstruction__title">
-                <h2>{{ __('home.company-description.reinforcement-overhaul-and-reconstruction') }}</h2>
-            </div>
+            <h2 class="menu-categories__title">{{ __('home.company-description.reinforcement-overhaul-and-reconstruction') }}</h2>
 
         </a>
 
-        <a href="{{ route('object.show', ['object' => 'designing-new-facilities']) }}" class="designing-new-facilities">
+        <a href="{{ route('object.show', ['object' => 'designing-new-facilities']) }}" class="menu-categories__item designing-new-facilities">
 
-            <div class="designing-new-facilities__background"></div>
-
-            <div class="designing-new-facilities__title">
-                <h2>{{ __('home.company-description.designing-new-facilities') }}</h2>
-            </div>
+            <h2 class="menu-categories__title">{{ __('home.company-description.designing-new-facilities') }}</h2>
 
         </a>
 

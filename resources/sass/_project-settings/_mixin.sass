@@ -1,11 +1,14 @@
 @mixin media($media)
-  @if $media == mobileScreenWidth
-    @media only screen and (min-width: $mobile-width-min) and (max-width: $mobile-width-max)
+  @if $media == mobile
+    @media only screen and (max-width: $mobile-width-max)
       @content
-  @else if $media == tableScreenWidth
+  @else if $media == table
+    @media only screen and (max-width: $tablet-width-max)
+      @content
+  @else if $media == onlyTable
     @media only screen and (min-width: $tablet-width-min) and (max-width: $tablet-width-max)
       @content
-  @else if $media == desktopScreenWidth
+  @else if $media == onlyDesktop
     @media only screen and (min-width: $desktop-width-min)
       @content
 

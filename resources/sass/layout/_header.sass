@@ -3,23 +3,23 @@
     width: 100%
     padding: 40px 0 0
 
-    @include media(tableScreenWidth)
+    @include media(table)
         padding: 24px 0 0
 
-    @include media(mobileScreenWidth)
+    @include media(mobile)
         padding: 16px 0 0
 
     &__section
         display: flex
         align-items: center
 
-        @include media(mobileScreenWidth)
+        @include media(mobile)
             display: block
 
     &__site-map
         flex-grow: 1
 
-        @include media(mobileScreenWidth)
+        @include media(mobile)
             margin: 0 auto
             display: flex
             justify-content: center
@@ -29,7 +29,7 @@
     &__logo
         width: 210px
 
-        @include media(mobileScreenWidth)
+        @include media(mobile)
             margin: 0 auto
 
 @import "menu/menu"
