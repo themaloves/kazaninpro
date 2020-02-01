@@ -3,38 +3,42 @@
 @section('content')
     <section class="preview">
 
+        @include('layout.header')
 
-        <div class="preview__background"></div>
+        <div class="preview__company inner-content">
 
-        <div class="preview__company">
+            <h1 class="preview__title">{{ __('home.company-name') }}</h1>
 
-            <h1 class="heading--big-size">{{ __('home.company-name') }}</h1>
-
-            <ul>
-                <li>{{ __('home.company-description.inspection-of-buildings-and-structures') }}</li>
-                <li>{{ __('home.company-description.reinforcement-overhaul-and-reconstruction') }}</li>
-                <li>{{ __('home.company-description.designing-new-facilities') }}</li>
+            <ul class="preview__items">
+                <li class="preview__item iteration-lists">{{ __('home.company-description.inspection-of-buildings-and-structures') }}</li>
+                <li class="preview__item iteration-lists">{{ __('home.company-description.reinforcement-overhaul-and-reconstruction') }}</li>
+                <li class="preview__item iteration-lists">{{ __('home.company-description.designing-new-facilities') }}</li>
             </ul>
 
         </div>
 
-        <div class="language">
+        <div class="preview__localization inner-content">
 
-            <div class="language__item">
-                <a class="link--default" href="{{ route('home', ['locale' => 'en']) }}">EN</a>
+            <div class="language">
+
+                <div class="language__item">
+                    <a class="link--default" href="{{ route('home', ['locale' => 'en']) }}">EN</a>
+                </div>
+                <div class="language__item">
+                    <a class="link--default" href="{{ route('home', ['locale' => 'ru']) }}">RU</a>
+                </div>
+
             </div>
-            <div class="language__item">
-                <a class="link--default" href="{{ route('home', ['locale' => 'ru']) }}">RU</a>
+
+            <div class="anchor">
+
+                <button class="anchor__button">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+
             </div>
 
-        </div>
-
-        <div class="anchor">
-
-            <button class="anchor__button">
-                <i class="fas fa-chevron-down"></i>
-            </button>
-
+            <div class="spacer"></div>
         </div>
 
     </section>

@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
-    @include('layout.header')
     <main class="inner-wrap">
         @yield('content')
     </main>

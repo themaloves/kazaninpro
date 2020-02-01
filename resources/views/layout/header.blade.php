@@ -1,6 +1,6 @@
 <header class="header">
 
-    <div class="header__section inner-wrap menu{{ View::getHeaderClass() }}">
+    <div class="header__section inner-content menu{{ View::getHeaderClass() }}">
 
         <div class="header__logo">
 
@@ -77,7 +77,6 @@
             </div>
 
         </div>
-
 
     </div>
 
