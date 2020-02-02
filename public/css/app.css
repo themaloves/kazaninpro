@@ -12110,6 +12110,8 @@ p {
 .contacts__items {
   position: relative;
   width: 100%;
+  -webkit-box-flex: 1;
+          flex: 1;
 }
 
 .contacts__item:nth-child(n+2) {
@@ -12146,6 +12148,11 @@ p {
 
 .contacts__description {
   color: #9b9fa1;
+}
+
+.contacts .header {
+  -webkit-box-flex: 1;
+          flex: 1;
 }
 
 .collection-object {

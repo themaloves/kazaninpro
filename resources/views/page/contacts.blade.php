@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title', 'Контакты')
+
 @section('content')
     <section class="contacts">
 
