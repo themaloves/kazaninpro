@@ -11658,6 +11658,7 @@ p {
 }
 
 .h2,
+.geography-projects__title,
 .column-bottom__title,
 .column-top__title {
   font-style: normal;
@@ -11668,6 +11669,7 @@ p {
 
 @media only screen and (max-width: 767px) {
   .h2,
+  .geography-projects__title,
   .column-bottom__title,
   .column-top__title {
     font-size: 22px;
@@ -11696,6 +11698,7 @@ p {
 }
 
 .regular,
+.geography-projects__description,
 .column-bottom__text,
 .column-top__text,
 .contacts__description,
@@ -11709,6 +11712,7 @@ p {
 
 @media only screen and (max-width: 767px) {
   .regular,
+  .geography-projects__description,
   .column-bottom__text,
   .column-top__text,
   .contacts__description,
@@ -11829,6 +11833,8 @@ p {
 .footer__items {
   display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 
 @media only screen and (max-width: 767px) {
@@ -11840,6 +11846,7 @@ p {
 .footer__item {
   -webkit-box-flex: 1;
           flex: 1;
+  max-width: 320px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -11994,61 +12001,6 @@ p {
 
 .about-us {
   color: #000;
-}
-
-.about-us .staff {
-  padding: 50px 0;
-  display: grid;
-  display: -moz-grid;
-  display: -ms-grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 10px;
-}
-
-.about-us .staff__images-box {
-  max-width: 500px;
-  grid-row: 1/span 3;
-  grid-column: 1/span 5;
-}
-
-.about-us .staff__title {
-  text-align: center;
-  align-self: center;
-  grid-row: 1;
-  grid-column: 6/span 7;
-}
-
-.about-us .staff__description {
-  grid-row: 2/span 2;
-  grid-column: 6/span 7;
-  line-height: 27px;
-}
-
-.about-us .company {
-  display: grid;
-  display: -moz-grid;
-  display: -ms-grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 10px;
-}
-
-.about-us .company__description {
-  grid-row: 1/span 3;
-  grid-column: 1/span 7;
-  line-height: 27px;
-}
-
-.about-us .company__images-box {
-  max-width: 500px;
-  grid-row: 1/span 3;
-  grid-column: 8/span 5;
-}
-
-.about-us .geography-project__title {
-  padding: 70px 0 20px;
-  text-align: center;
 }
 
 .about-us .activity {
@@ -12485,7 +12437,6 @@ p {
 .column-bottom {
   display: -webkit-box;
   display: flex;
-  padding-bottom: 32px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -12494,19 +12445,7 @@ p {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .column-bottom {
-    padding-bottom: 24px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .column-bottom {
-    padding-bottom: 16px;
-  }
-}
-
-.column-bottom__rigth,
+.column-bottom__right,
 .column-bottom__item {
   -webkit-box-flex: 1;
           flex-grow: 1;
@@ -12606,6 +12545,34 @@ p {
 @media only screen and (max-width: 1199px) {
   .column-bottom__button-hidden {
     display: block;
+  }
+}
+
+.geography-projects__title {
+  padding: 32px 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .geography-projects__title {
+    padding: 24px 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .geography-projects__title {
+    padding: 16px 0;
+  }
+}
+
+.geography-projects__description {
+  font-family: "Montserrat", sans-serif, "Roboto", -apple-system, BlinkMacSystemFont, "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial";
+  line-height: 32px;
+}
+
+@media only screen and (max-width: 767px) {
+  .geography-projects__description {
+    line-height: 24px;
   }
 }
 

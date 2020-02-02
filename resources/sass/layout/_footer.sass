@@ -10,12 +10,14 @@
 
     &__items
         display: flex
+        justify-content: space-between
 
         @include media(mobile)
             display: inline-block
 
     &__item
         flex: 1
+        max-width: 320px
 
         @include media(onlyTable)
             &:nth-child(2)
