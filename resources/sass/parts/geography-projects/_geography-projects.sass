@@ -1,0 +1,21 @@
+.geography-projects
+
+    &__title
+        padding: 32px 0
+        text-align: center
+
+        @extend .h2
+
+        @include media(onlyTable)
+            padding: 24px 0
+
+        @include media(mobile)
+            padding: 16px 0
+
+    &__description
+        @extend .regular
+        font-family: 'Montserrat', sans-serif, 'Roboto', -apple-system, BlinkMacSystemFont, 'Ubuntu', 'Droid Sans', "Helvetica Neue", "Arial"
+        line-height: 32px
+
+        @include media(mobile)
+            line-height: 24px
