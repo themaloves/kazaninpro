@@ -11658,6 +11658,7 @@ p {
 }
 
 .h2,
+.our-clients__title,
 .direction-activity__title,
 .geography-projects__title,
 .column-bottom__title,
@@ -11670,6 +11671,7 @@ p {
 
 @media only screen and (max-width: 767px) {
   .h2,
+  .our-clients__title,
   .direction-activity__title,
   .geography-projects__title,
   .column-bottom__title,
@@ -12563,6 +12565,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   padding-top: 32px;
+  margin: -16px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -12574,6 +12577,7 @@ p {
 @media only screen and (max-width: 767px) {
   .direction-activity__items {
     padding-top: 16px;
+    margin: -8px;
   }
 }
 
@@ -12626,5 +12630,48 @@ p {
 .direction-activity__description {
   padding-top: 15px;
   font-family: "Montserrat", sans-serif, "Roboto", -apple-system, BlinkMacSystemFont, "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial";
+}
+
+.our-clients {
+  padding-top: 32px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-clients {
+    padding-top: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .our-clients {
+    padding-top: 16px;
+  }
+}
+
+.our-clients__title {
+  text-align: center;
+}
+
+.our-clients__items {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -8px -8px 0;
+}
+
+.our-clients__item {
+  -webkit-box-flex: 1;
+          flex: 1 1 calc(14% - 16px);
+  margin: 8px 8px 0;
+  box-sizing: border-box;
+  min-width: 112px;
+  text-align: center;
+  background: #b5ced8;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-clients__item {
+    min-width: 85px;
+  }
 }
 

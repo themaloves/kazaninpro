@@ -15,16 +15,9 @@
 
         @include('parts.direction-activity.direction-activity')
 
+        @include('parts.our-clients.our-clients')
+
 {{--        <span class="about-us__page-decor">О нас</span>--}}
-
-{{--
-
-
-{{--        <div class="our-clients">--}}
-{{--            <div class="our-clients__title">--}}
-{{--                <h1 class="heading--normal-size">Наши Клиенты</h1>--}}
-{{--            </div>--}}
-{{--        </div>--}}
 
     </section>
 @endsection

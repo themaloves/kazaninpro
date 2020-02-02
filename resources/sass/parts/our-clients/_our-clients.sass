@@ -1,0 +1,29 @@
+.our-clients
+    padding-top: 32px
+
+    @include media(onlyTable)
+        padding-top: 24px
+
+    @include media(mobile)
+        padding-top: 16px
+
+    &__title
+        text-align: center
+        @extend .h2
+
+
+    &__items
+        display: flex
+        flex-wrap: wrap
+        margin: -8px -8px 0
+
+    &__item
+        flex: 1 1 calc(14% - 16px)
+        margin: 8px 8px 0
+        box-sizing: border-box
+        min-width: 112px
+        text-align: center
+        background: #b5ced8
+
+        @include media(onlyTable)
+            min-width: 85px
