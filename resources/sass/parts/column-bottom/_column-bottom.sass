@@ -1,0 +1,79 @@
+.column-bottom
+    display: flex
+    padding-bottom: 32px
+
+    @include media(table)
+        flex-wrap: wrap
+
+    @include media(onlyTable)
+        padding-bottom: 24px
+
+    @include media(mobile)
+        padding-bottom: 16px
+
+    &__rigth,
+    &__item
+        flex-grow: 1
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+
+    &__right
+        min-width: 304px
+        max-width: 520px
+
+        @include media(table)
+            display: none
+
+    &__left
+        flex-basis: 680px
+        flex-shrink: 0
+        transition: height 0.3s
+
+        display: flex
+        flex-direction: column
+
+        @include media(table)
+            flex-basis: 100%
+            height: 0
+            overflow: hidden
+
+            &--active
+                height: var(--height-left-column)
+
+    &__item
+        margin-right: 16px
+
+        @include media(onlyTable)
+            margin: 0 0 24px
+
+        @include media(mobile)
+            margin: 0 0 16px
+
+        &:first-child
+            flex-basis: 100%
+
+    &__title
+        @extend .h2
+
+        @include media(onlyTable)
+            margin-bottom: 24px
+
+        @include media(mobile)
+            margin-bottom: 16px
+
+    &__text
+        @extend .regular
+        line-height: 32px
+        font-family: 'Montserrat', sans-serif, 'Roboto', -apple-system, BlinkMacSystemFont, 'Ubuntu', 'Droid Sans', "Helvetica Neue", "Arial"
+
+        @include media(table)
+            line-height: 24px
+
+
+    &__button-hidden
+        display: none
+
+        @include media(table)
+            display: block

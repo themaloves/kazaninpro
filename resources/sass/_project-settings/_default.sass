@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap&subset=cyrillic,cyrillic-ext,latin-ext')
+
 @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss"
 @import "~@fortawesome/fontawesome-free/scss/brands.scss"
 @import "~@fortawesome/fontawesome-free/scss/regular.scss"
@@ -13,12 +15,15 @@ body
     margin: 0
     overflow-x: hidden
     color: map-get($colors, "white")
+    font-family: 'Lato', sans-serif, 'Roboto', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Ubuntu', 'Droid Sans', "Helvetica Neue", "Arial"
 
 svg
     width: 100%
 
 img
-    width: 100%
+    vertical-align: bottom
+    max-width: 100%
+    height: auto
 
 h1,
 h2,

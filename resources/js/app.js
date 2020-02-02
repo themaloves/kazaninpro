@@ -1,3 +1,6 @@
 require('./bootstrap');
-require('./module/preview/preview');
-require('normalize-scss');
+import 'normalize-scss'
+
+import './module/preview'
+import './module/about-title'
+import './module/column-bottom'

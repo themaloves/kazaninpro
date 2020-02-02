@@ -30485,14 +30485,22 @@ module.exports = function(module) {
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var normalize_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! normalize-scss */ "./node_modules/normalize-scss/sass/_normalize.scss");
+/* harmony import */ var normalize_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(normalize_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _module_preview__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./module/preview */ "./resources/js/module/preview.js");
+/* harmony import */ var _module_about_title__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./module/about-title */ "./resources/js/module/about-title.js");
+/* harmony import */ var _module_column_bottom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module/column-bottom */ "./resources/js/module/column-bottom.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-__webpack_require__(/*! ./module/preview/preview */ "./resources/js/module/preview/preview.js");
 
-__webpack_require__(/*! normalize-scss */ "./node_modules/normalize-scss/sass/_normalize.scss");
+
+
+
 
 /***/ }),
 
@@ -30528,17 +30536,87 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/js/module/preview/preview.js":
-/*!************************************************!*\
-  !*** ./resources/js/module/preview/preview.js ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./resources/js/module/about-title.js":
+/*!********************************************!*\
+  !*** ./resources/js/module/about-title.js ***!
+  \********************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
-var a = $('.preview');
-console.log(a);
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
+  var $aboutItemTopColumn = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.column-top__item:first-child'),
+      $columnLeft = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.column-top__left');
+
+  if (window.matchMedia('(max-width: 1200px)').matches === true) {
+    if ($columnLeft.find('.column-top__title').length === 0) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('<h1 class="column-top__title">О нас</h1>').prependTo($columnLeft);
+      $aboutItemTopColumn.remove();
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./resources/js/module/column-bottom.js":
+/*!**********************************************!*\
+  !*** ./resources/js/module/column-bottom.js ***!
+  \**********************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
+  var $columnBottomLeft = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.column-bottom__left'),
+      $columnBottomItem = $columnBottomLeft.find('.column-bottom__item'),
+      $buttonHiddenColumnBottomItem = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.column-bottom__button-hidden');
+  $buttonHiddenColumnBottomItem.on('click', function () {
+    var heightBlock = $columnBottomItem.height();
+    $columnBottomLeft.toggleClass('column-bottom__left--active');
+    $columnBottomLeft.css('--height-left-column', heightBlock + 'px');
+
+    if ($buttonHiddenColumnBottomItem.text() === 'Читать полностью') {
+      $buttonHiddenColumnBottomItem.text('Свернуть');
+      $buttonHiddenColumnBottomItem.css('margin-top', '20px');
+    } else {
+      $buttonHiddenColumnBottomItem.text('Читать полностью');
+      $buttonHiddenColumnBottomItem.css('margin-top', '0');
+    }
+  });
+});
+
+/***/ }),
+
+/***/ "./resources/js/module/preview.js":
+/*!****************************************!*\
+  !*** ./resources/js/module/preview.js ***!
+  \****************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
+  var $previewAnchor = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.anchor__button'),
+      $documentHtmlAndBody = jquery__WEBPACK_IMPORTED_MODULE_0___default()('html, body'),
+      $menuCategoriesSection = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.menu-categories');
+  $previewAnchor.on('click', function () {
+    $documentHtmlAndBody.animate({
+      scrollTop: $menuCategoriesSection.offset().top
+    }, 'slow');
+  });
+});
 
 /***/ }),
 
