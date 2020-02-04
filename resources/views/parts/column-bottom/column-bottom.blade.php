@@ -1,26 +1,17 @@
 <div class="column-bottom inner-content">
+
     <div class="column-bottom__left">
         <div class="column-bottom__item">
-            <p class="column-bottom__text">
-                Первоначальная и основная специализация нашей компании – техническое обследование зданий,
-                проводимое для оценки их фактического технического состояния, возможности эксплуатации и
-                необходимости проведения ремонтных работ. Со временем, на основе результатов наших
-                обследований мы начали разрабатывать проекты усиления и реконструкции зданий, а впоследствии
-                перешли к проектированию новых объектов.
-            </p>
+            <p class="column-bottom__text">{{ __('about-as.column-bottom.text-first') }}</p>
             <br>
-            <p class="column-bottom__text">
-                Сотрудники активно занимаются научными исследованиями, что позволяет квалифицированно выполнять
-                работы, связанные с испытаниями и экспериментальной оценкой соответствия строительных конструкций
-                и материалов расчетным параметрам. В разное время нашими специалистами проводились работы по
-                испытаниям плит перекрытий, свай с преднапрягаемой арматурой, балок армированных композитной
-                стекло - и базальтопластиковой арматурой и других.
-            </p>
+            <p class="column-bottom__text">{{ __('about-as.column-bottom.text-second') }}</p>
         </div>
     </div>
+
     <div class="column-bottom__right">
         <img src="/images/about-us/img_about_two_line.jpg" alt="images">
     </div>
 
-    <button class="column-bottom__button-hidden">Читать полностью</button>
+    <button class="column-bottom__button-hidden">{{ __('about-as.column-bottom.button-column') }}</button>
+
 </div>
