@@ -10,33 +10,34 @@
         <div class="collection-object__items">
             @foreach($cards as $card)
 
-                <a class="collection-object__item" href="{{ route('object.show-card', ['object' => $card->object, 'card' => $card->id]) }}">
+            <a class="collection-object__item" href="{{ route('object.show-card', ['object' => $card->object, 'card' => $card->id]) }}">
 
-                    <div class="collection-object__background">
-                        @if($card->attachment->count() > 0)
-                            <img src="{{ $card->attachment->first()->url() }}" alt="">
-                        @endif
-                    </div>
+                <div class="collection-object__background">
+                    @if($card->attachment->count() > 0)
+                        <img src="{{ $card->attachment->first()->url() }}" alt="">
+                    @endif
+                </div>
 
-                    <div class="collection-object__wrap">
+                <div class="collection-object__card-content">
 
-                <span class="collection-object__title">
-                    {{ View::trans($card->title['ru'], $card->title['en']) }}
-                </span>
+                    <span class="collection-object__title">
+                        {{ View::trans($card->title['ru'], $card->title['en']) }}
+                    </span>
 
-                        <span class="collection-object__description">
-                    {{ View::trans($card->description['ru'], $card->description['en']) }}
-                </span>
+                            <span class="collection-object__description">
+                        {{ View::trans($card->description['ru'], $card->description['en']) }}
+                    </span>
 
-                        <span class="collection-object__address">
-                    {{ View::trans($card->address['ru'], $card->address['en']) }}
-                </span>
+                            <span class="collection-object__address">
+                        {{ View::trans($card->address['ru'], $card->address['en']) }}
+                    </span>
 
-                    </div>
-                </a>
+                </div>
+            </a>
 
             @endforeach
         </div>
+
     </div>
 
 </div>

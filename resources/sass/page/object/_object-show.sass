@@ -5,14 +5,37 @@
         display: flex
         flex-wrap: wrap
         position: relative
-        margin: -16px
+        margin: 0 -16px
 
     &__item
-        -webkit-box-flex: 1
         flex: 0 1 calc(33.33% - 32px)
         margin: 16px 16px 0
         box-sizing: border-box
         text-align: center
-        background: #b5ced8
         min-width: 170px
         padding: 50px 20px
+        position: relative
+        max-height: 320px
+        min-height: 320px
+
+
+    &__background
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        object-fit: contain
+
+        &:after
+            content: ''
+            background-color: rgba(0, 0, 0, 0.7)
+            position: absolute
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+
+    &__card-content
+        position: relative
+

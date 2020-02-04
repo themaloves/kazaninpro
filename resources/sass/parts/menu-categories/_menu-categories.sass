@@ -25,14 +25,9 @@
         justify-content: center
         text-align: center
 
-        @include media(table)
+        @media #{$table}
             @include gridElement(2, 1)
             position: relative
-
-        @include media(mobile)
-            @include gridElement(2, 1)
-            position: relative
-
 
         &:after
             content: ''
