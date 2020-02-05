@@ -12177,6 +12177,8 @@ p {
   -webkit-box-flex: 1;
           flex: 1;
   max-width: 600px;
+  display: -webkit-box;
+  display: flex;
 }
 
 .card-show__item:nth-child(1) {
@@ -12188,22 +12190,28 @@ p {
 }
 
 .card-show__picture-collection {
-  max-height: 700px;
-  padding-top: 132px;
   max-width: 100%;
   display: -webkit-box;
   display: flex;
   position: relative;
   z-index: 1;
-  margin: 0 -8px;
+  flex-wrap: wrap;
+  max-height: 500px;
+  overflow: hidden;
+  margin: auto 0;
 }
 
 .card-show__image {
   object-fit: cover;
   -o-object-fit: cover;
   object-fit: cover;
-  width: calc(50% - 16px);
-  margin: 0 16px;
+  width: calc(50% - 32px);
+  margin: 16px 16px 0;
+  height: 240px;
+}
+
+.card-show__image:nth-child(-n+2) {
+  margin: 0 16px 0;
 }
 
 .card-show__background {
@@ -12213,6 +12221,32 @@ p {
   position: absolute;
   top: 0;
   border-bottom-left-radius: 190px;
+}
+
+.card-show__column {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  margin: auto 0;
+  max-height: 760px;
+  padding-top: 15%;
+  position: relative;
+}
+
+.card-show__text-container {
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.card-show__description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 22;
+  -webkit-box-orient: vertical;
 }
 
 .menu-categories {
