@@ -12,9 +12,18 @@ class ViewHelper extends View
     // value is custom class
     public const HEADER_CLASSES = [
         'about' => '--black',
+        'object.show-card' => '--mix',
+    ];
+
+    public const FOOTER_CLASSES = [
+        'contacts' => 'footer--none',
+        'object.show' => 'footer--none',
+        'object.show-card' => 'footer--none',
     ];
 
     public const DEFAULT_HEADER_CLASS = '--default-color';
+
+    public const DEFAULT_FOOTER_CLASS = 'footer';
 
 
     /**
@@ -25,6 +34,11 @@ class ViewHelper extends View
     public static function getHeaderClass(): string
     {
         return self::HEADER_CLASSES[Route::currentRouteName()] ?? self::DEFAULT_HEADER_CLASS;
+    }
+
+    public static function getFooterClass(): string
+    {
+        return self::FOOTER_CLASSES[Route::currentRouteName()] ?? self::DEFAULT_FOOTER_CLASS;
     }
 
     /**

@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="{{ View::getFooterClass() }}">
 
     <div class="footer__items inner-content">
 
