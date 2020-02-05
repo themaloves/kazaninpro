@@ -1,0 +1,44 @@
+.card-show
+    color: map_get($colors, 'black')
+
+    .header
+        position: absolute
+
+    &__items
+        display: flex
+        min-height: 100vh
+
+    &__item
+        flex: 1
+        max-width: 600px
+
+        &:nth-child(1)
+            margin-left: auto
+
+        &:nth-child(2)
+            margin-right: auto
+
+    &__picture-collection
+        max-height: 700px
+        padding-top: 132px
+        max-width: 100%
+        display: flex
+        position: relative
+        z-index: 1
+        margin: 0 -8px
+
+    &__image
+        object-fit: cover
+        -o-object-fit: cover
+        object-fit: cover
+        width: calc(50% - 16px)
+        margin: 0 16px
+
+
+    &__background
+        background-color: #373F43
+        height: 100%
+        width: 100%
+        position: absolute
+        top: 0
+        border-bottom-left-radius: 190px

@@ -14,7 +14,7 @@
 
                 <div class="collection-object__background">
                     @if($card->attachment->count() > 0)
-                        <img src="{{ $card->attachment->first()->url() }}" alt="">
+                        <img src="{{ $card->attachment->first()->url() }}" class="collection-object__picture">
                     @endif
                 </div>
 
@@ -24,11 +24,11 @@
                         {{ View::trans($card->title['ru'], $card->title['en']) }}
                     </span>
 
-                            <span class="collection-object__description">
+                    <span class="collection-object__description">
                         {{ View::trans($card->description['ru'], $card->description['en']) }}
                     </span>
 
-                            <span class="collection-object__address">
+                    <span class="collection-object__address">
                         {{ View::trans($card->address['ru'], $card->address['en']) }}
                     </span>
 
