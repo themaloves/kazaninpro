@@ -30550,11 +30550,16 @@ __webpack_require__.r(__webpack_exports__);
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
   var $aboutItemTopColumn = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.column-top__item:first-child'),
-      $columnLeft = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.column-top__left');
+      $columnLeft = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.column-top__left'),
+      $text = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.column-top__text'),
+      returnedText = function returnedText() {
+    return new RegExp(/[a-zA-Z]/).test($text.text());
+  };
 
   if (window.matchMedia('(max-width: 1200px)').matches === true) {
     if ($columnLeft.find('.column-top__title').length === 0) {
-      jquery__WEBPACK_IMPORTED_MODULE_0___default()('<h1 class="column-top__title">О нас</h1>').prependTo($columnLeft);
+      var text = returnedText() ? 'About' : 'О нас';
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()("<h1 class=\"column-top__title\">".concat(text, "</h1>")).prependTo($columnLeft);
       $aboutItemTopColumn.remove();
     }
   }
