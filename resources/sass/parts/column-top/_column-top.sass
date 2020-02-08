@@ -3,13 +3,13 @@
     padding-top: 32px
     padding-bottom: 32px
 
-    @include media(table)
+    @media #{$table}
         flex-wrap: wrap
 
-    @include media(onlyTable)
+    @media #{$onlyTable}
         padding-bottom: 24px
 
-    @include media(mobile)
+    @media #{$phone}
         padding-bottom: 16px
 
     &__left,
@@ -24,7 +24,7 @@
         min-width: 304px
         max-width: 520px
 
-        @include media(table)
+        @media #{$table}
             max-width: 100%
 
     &__right
@@ -34,7 +34,7 @@
         display: flex
         flex-direction: column
 
-        @include media(table)
+        @media #{$table}
             flex-basis: 100%
 
     &__item
@@ -45,27 +45,27 @@
             min-height: 64px
             flex-basis: 10%
 
-            @include media(table)
+            @media #{$table}
                 margin-bottom: 0
 
         &:last-child
             flex-basis: 90%
             justify-content: normal
 
-        @include media(onlyTable)
+        @media #{$onlyTable}
             margin: 24px 0 0
 
-        @include media(mobile)
+        @media #{$phone}
             margin: 16px 0 0
 
 
     &__title
         @extend .h2
 
-        @include media(onlyTable)
+        @media #{$onlyTable}
             margin-bottom: 24px
 
-        @include media(mobile)
+        @media #{$phone}
             margin-bottom: 16px
 
     &__text
@@ -73,5 +73,5 @@
         line-height: 32px
         font-family: 'Montserrat', sans-serif, 'Roboto', -apple-system, BlinkMacSystemFont, 'Ubuntu', 'Droid Sans', "Helvetica Neue", "Arial"
 
-        @include media(table)
+        @media #{$table}
             line-height: 24px

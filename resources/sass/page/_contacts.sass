@@ -32,10 +32,10 @@
         &:nth-child(n+2)
             padding-top: 24px
 
-            @include media(onlyTable)
+            @media #{$onlyTable}
                 padding-top: 16px
 
-            @include media(mobile)
+            @media #{$phone}
                 padding-top: 8px
 
 
@@ -43,10 +43,10 @@
         @extend .h3
         padding-bottom: 24px
 
-        @include media(onlyTable)
+        @media #{$onlyTable}
             padding-bottom: 16px
 
-        @include media(mobile)
+        @media #{$phone}
             padding-bottom: 8px
 
     &__description

@@ -1,10 +1,10 @@
 .direction-activity
     padding-top: 32px
 
-    @include media(onlyTable)
+    @media #{$onlyTable}
         padding-top: 24px
 
-    @include media(mobile)
+    @media #{$phone}
         padding-top: 16px
 
     &__title
@@ -17,10 +17,10 @@
         padding-top: 32px
         margin: -16px
 
-        @include media(onlyTable)
+        @media #{$onlyTable}
             padding-top: 24px
 
-        @include media(mobile)
+        @media #{$phone}
             padding-top: 16px
             margin: -8px
 
@@ -33,11 +33,11 @@
         align-items: center
         min-width: 130px
 
-        @include media(onlyTable)
+        @media #{$onlyTable}
             flex: 1 1 calc(33% - 32px)
             margin: 16px 16px
 
-        @include media(mobile)
+        @media #{$phone}
             flex: 1 1 calc(33% - 16px)
             margin: 8px 8px
 

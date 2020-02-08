@@ -8,10 +8,10 @@
 
         @include gridTemplate(repeat(10, 1fr), repeat(10, 1fr), 0)
 
-        @include media(table)
+        @media #{$table}
             @include gridTemplate(repeat(3, 1fr), 1fr, 0)
 
-        @include media(mobile)
+        @media #{$phone}
             @include gridTemplate(repeat(3, 1fr), 1fr, 0)
 
     &__item
@@ -53,7 +53,7 @@
             &:before
                 background-image: url("/images/menu-categories/inspection_of_buildings_and_structure.jpg")
 
-            @include media(table)
+            @media #{$table}
                 @include gridElement(1, 1)
                 padding: 0
 
@@ -64,7 +64,7 @@
             &:before
                 background-image: url("/images/menu-categories/reinforcement_overhaul_and_reconstruction.jpg")
 
-            @include media(table)
+            @media #{$table}
                 @include gridElement(2, 1)
                 padding: 0
 
@@ -76,12 +76,12 @@
             &:before
                 background-image: url("/images/menu-categories/designing_new_facilities.jpg")
 
-            @include media(table)
+            @media #{$table}
                 @include gridElement(3, 1)
                 padding: 0
 
 
-        @include media(onlyDesktop)
+        @media #{$desktop}
             &:nth-child(1)
                 -webkit-clip-path: polygon(91% 0%, 100% 0%, 0% 0%, 0% 100%, 75% 100%)
 

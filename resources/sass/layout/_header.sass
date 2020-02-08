@@ -4,23 +4,23 @@
     padding: 40px 0 0
     position: relative
 
-    @include media(table)
+    @media #{$onlyTable}
         padding: 24px 0 0
 
-    @include media(mobile)
+    @media #{$phone}
         padding: 8px 0 0
 
     &__section
         display: flex
         align-items: center
 
-        @include media(mobile)
+        @media #{$phone}
             display: block
 
     &__site-map
         flex-grow: 1
 
-        @include media(mobile)
+        @media #{$phone}
             margin: 0 auto
             display: flex
             justify-content: center
@@ -36,4 +36,3 @@
 @import "menu/menu"
 @import "logo/logo"
 @import "nav/nav"
-@import "button/button"

@@ -1,10 +1,10 @@
 .our-clients
     padding-top: 32px
 
-    @include media(onlyTable)
+    @media #{$onlyTable}
         padding-top: 24px
 
-    @include media(mobile)
+    @media #{$phone}
         padding-top: 16px
 
     &__title
@@ -25,5 +25,5 @@
         text-align: center
         background: #b5ced8
 
-        @include media(onlyTable)
+        @media #{$onlyTable}
             min-width: 85px

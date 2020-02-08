@@ -6,10 +6,10 @@
 
         @extend .h2
 
-        @include media(onlyTable)
+        @media #{$onlyTable}
             padding: 24px 0
 
-        @include media(mobile)
+        @media #{$phone}
             padding: 16px 0
 
     &__description
@@ -17,5 +17,5 @@
         font-family: 'Montserrat', sans-serif, 'Roboto', -apple-system, BlinkMacSystemFont, 'Ubuntu', 'Droid Sans', "Helvetica Neue", "Arial"
         line-height: 32px
 
-        @include media(mobile)
+        @media #{$phone}
             line-height: 24px

@@ -10,69 +10,16 @@
         margin: 0 auto
         z-index: 1
 
-        @include media(onlyTable)
+        @media #{$onlyTable}
             padding: 0 32px
 
-        @include media(mobile)
+        @media #{$phone}
             padding: 0 8px
-
-.menu--default-color
-    & .link
-        &--default
-            color: map_get($colors, "white")
-            text-decoration: none
-    .fil0
-        fill: map_get($colors, "white")
-        fill-rule: nonzero
-
-.menu--black
-    & .link
-        &--default
-            color: map_get($colors, "black")
-            text-decoration: none
-        .fil0
-            color: map_get($colors, "black")
-            fill-rule: nonzero
 
 .link
     &--default
         color: map_get($colors, "white")
         text-decoration: none
-
-.heading
-    margin: 0
-    &--big-size
-        font-size: 40px
-        margin: 0
-    &--normal-size
-        font-size: 24px
-        margin: 0
-    &--small-size
-        font-size: 18px
-        margin: 0
-
-.subtitle
-    margin: 0
-    &--big-size
-        font-size: 36px
-        margin: 0
-    &--normal-size
-        font-size: 20px
-        margin: 0
-    &--small-size
-        font-size: 16px
-        margin: 0
-
-.paragraph
-    &--big-size
-        font-size: 24px
-        margin: 0
-    &--normal-size
-        font-size: 18px
-        margin: 0
-    &--small-size
-        font-size: 16px
-        margin: 0
 
 .spacer
     flex: 1

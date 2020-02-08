@@ -1,12 +1,28 @@
 .menu
 
     &--default-color
-        color: map_get($colors, "white")
+        & .link--default
+            color: map_get($colors, "white")
+
+        svg
+            fill: map_get($colors, "white")
+            fill-rule: nonzero
 
     &--black
-        color: map_get($colors, "black")
+        & .link--default
+            color: map_get($colors, "black")
+
+        svg
+            fill: map_get($colors, "black")
+            fill-rule: nonzero
 
     &--mix
-        & .nav__item
-            & .link--default
-                color: map_get($colors, 'white')
+        svg
+            fill: map_get($colors, "black")
+            fill-rule: nonzero
+
+        & .link--default
+            color: map_get($colors, 'white')
+
+            @media #{$table}
+                color: map_get($colors, 'black')

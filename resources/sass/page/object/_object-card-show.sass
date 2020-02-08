@@ -67,3 +67,33 @@
         display: -webkit-box
         -webkit-line-clamp: 22
         -webkit-box-orient: vertical
+        font-family: 'Montserrat', sans-serif, 'Roboto', -apple-system, BlinkMacSystemFont, 'Ubuntu', 'Droid Sans', "Helvetica Neue", "Arial"
+        font-size: 24px
+        line-height: 32px
+        padding-top: 32px
+
+        @media #{$table}
+            font-size: 16px
+            line-height: 20px
+
+        @media #{$onlyTable}
+            padding-top: 24px
+
+        @media #{$phone}
+            padding-top: 16px
+
+
+
+    &__title
+        @extend .h2
+
+
+    &__address
+        display: block
+        padding-top: 32px
+
+        @media #{$onlyTable}
+            padding-top: 24px
+
+        @media #{$phone}
+            padding-top: 16px
