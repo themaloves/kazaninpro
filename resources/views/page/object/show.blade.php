@@ -24,10 +24,6 @@
                         {{ View::trans($card->title['ru'], $card->title['en']) }}
                     </span>
 
-                    <span class="collection-object__description">
-                        {{ View::trans($card->description['ru'], $card->description['en']) }}
-                    </span>
-
                     <span class="collection-object__address">
                         {{ View::trans($card->address['ru'], $card->address['en']) }}
                     </span>

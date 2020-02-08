@@ -1,17 +1,3 @@
-@mixin media($media)
-  @if $media == mobile
-    @media only screen and (max-width: $mobile-width-max)
-      @content
-  @else if $media == table
-    @media only screen and (max-width: $tablet-width-max)
-      @content
-  @else if $media == onlyTable
-    @media only screen and (min-width: $tablet-width-min) and (max-width: $tablet-width-max)
-      @content
-  @else if $media == onlyDesktop
-    @media only screen and (min-width: $desktop-width-min)
-      @content
-
 @mixin borderRadius($radiusPosition, $radiusRounding)
   @if $radiusPosition == topLeft
     border-top-left-radius: $radiusRounding

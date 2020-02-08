@@ -30495,7 +30495,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _module_preview__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./module/preview */ "./resources/js/module/preview.js");
 /* harmony import */ var _module_about_title__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./module/about-title */ "./resources/js/module/about-title.js");
 /* harmony import */ var _module_column_bottom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module/column-bottom */ "./resources/js/module/column-bottom.js");
+/* harmony import */ var _module_picture_collection__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./module/picture-collection */ "./resources/js/module/picture-collection.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+
 
 
 
@@ -30558,7 +30560,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
 
   if (window.matchMedia('(max-width: 1200px)').matches === true) {
     if ($columnLeft.find('.column-top__title').length === 0) {
-      var text = returnedText() ? 'About' : 'О нас';
+      var text = returnedText() ? 'About us' : 'О нас';
       jquery__WEBPACK_IMPORTED_MODULE_0___default()("<h1 class=\"column-top__title\">".concat(text, "</h1>")).prependTo($columnLeft);
       $aboutItemTopColumn.remove();
     }
@@ -30596,6 +30598,31 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
       $buttonHiddenColumnBottomItem.css('margin-top', '0');
     }
   });
+});
+
+/***/ }),
+
+/***/ "./resources/js/module/picture-collection.js":
+/*!***************************************************!*\
+  !*** ./resources/js/module/picture-collection.js ***!
+  \***************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
+  var $parentContainer = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.card-show__items'),
+      $pictureCollection = $parentContainer.find('.card-show__picture-collection');
+
+  if (window.matchMedia('(max-width: 1199px)').matches) {
+    var moveSelector = $pictureCollection.detach();
+    console.log(moveSelector);
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.card-show__text-container').append(moveSelector);
+  }
 });
 
 /***/ }),

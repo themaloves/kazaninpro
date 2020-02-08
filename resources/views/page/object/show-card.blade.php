@@ -16,10 +16,12 @@
 
                         <p class="card-show__description">{{ View::trans($card->description['ru'], $card->description['en']) }}</p>
 
-                        <p>
-                            <span><i
-                                    class="fas fa-map-marker-alt"></i></span>{{ View::trans($card->address['ru'], $card->address['en']) }}
-                        </p>
+                        <span class="card-show__address">
+                            <span>
+                                <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                            {{ View::trans($card->address['ru'], $card->address['en']) }}
+                        </span>
                     </div>
                 </div>
 

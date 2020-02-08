@@ -8,7 +8,7 @@ $(() => {
 
     if (window.matchMedia('(max-width: 1200px)').matches === true) {
         if ($columnLeft.find('.column-top__title').length === 0) {
-            const text = returnedText() ? 'About' : 'О нас';
+            const text = returnedText() ? 'About us' : 'О нас';
 
             $(`<h1 class="column-top__title">${text}</h1>`).prependTo($columnLeft);
             $aboutItemTopColumn.remove();
