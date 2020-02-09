@@ -48,38 +48,48 @@
 
         &:nth-child(1)
             @include gridElement(1/span 10, 1/span 4)
-            padding-right: calc(100% - 83%)
 
             &:before
                 background-image: url("/images/menu-categories/inspection_of_buildings_and_structure.jpg")
 
             @media #{$table}
                 @include gridElement(1, 1)
-                padding: 0
+
+            & .menu-categories__title
+                width: 100%
+                padding-left: 5%
+                padding-right: 20%
 
         &:nth-child(2)
             @include gridElement(1/span 10, 4/span 4)
-            padding: 20%
 
             &:before
                 background-image: url("/images/menu-categories/reinforcement_overhaul_and_reconstruction.jpg")
 
             @media #{$table}
                 @include gridElement(2, 1)
-                padding: 0
+
+            & .menu-categories__title
+                width: 100%
+                padding-left: 15%
+                padding-right: 20%
+
 
         &:nth-child(3)
             @include gridElement(1/span 10, 7/span 4)
-            padding-left: calc(100% - 90%)
-            padding-right: calc(100% - 96%)
 
             &:before
                 background-image: url("/images/menu-categories/designing_new_facilities.jpg")
 
             @media #{$table}
                 @include gridElement(3, 1)
-                padding: 0
 
+            & .menu-categories__title
+                padding-left: 15%
+                width: 100%
+
+                @media #{$table}
+                    padding: 0
 
         @media #{$desktop}
             &:nth-child(1)
