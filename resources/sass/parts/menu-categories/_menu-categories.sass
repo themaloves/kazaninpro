@@ -17,13 +17,13 @@
     &__item
         height: 100%
         width: 100%
-        transition: 0.3s
         overflow: hidden
         display: flex
         position: relative
         align-items: center
         justify-content: center
         text-align: center
+        transition: background-color 0.3s, transform 0.3s
 
         @media #{$table}
             @include gridElement(2, 1)
@@ -60,6 +60,9 @@
                 padding-left: 5%
                 padding-right: 20%
 
+                @media #{$table}
+                    padding: 0
+
         &:nth-child(2)
             @include gridElement(1/span 10, 4/span 4)
 
@@ -73,6 +76,9 @@
                 width: 100%
                 padding-left: 15%
                 padding-right: 20%
+
+                @media #{$table}
+                    padding: 0
 
 
         &:nth-child(3)
@@ -100,6 +106,13 @@
 
             &:nth-child(3)
                 -webkit-clip-path: polygon(100% 100%, 100% 0, 20% 0%, 5% 100%)
+
+        &:hover
+            &:after
+                background-color: rgba(0, 0, 0, 0.5)
+
+            &:before
+                transform: scale(1.03)
 
     &__title
         @extend .h3

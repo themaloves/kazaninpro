@@ -1,5 +1,8 @@
 @extends('layout')
 @section('title', 'Объекты')
 @section('content')
-    @include('parts.menu-categories.menu-categories')
+    <section class="list">
+        @include('layout.header')
+        @include('parts.menu-categories.menu-categories')
+    </section>
 @endsection

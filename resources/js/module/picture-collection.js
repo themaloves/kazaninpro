@@ -1,4 +1,6 @@
 import $ from 'jquery';
+window.jQuery = $;
+require('fancybox');
 
 
 $(() => {
@@ -13,4 +15,6 @@ $(() => {
         $('.card-show__text-container').append(moveSelector);
 
     }
+
+    $(".fancybox").fancybox();
 });
