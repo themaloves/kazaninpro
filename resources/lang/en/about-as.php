@@ -24,5 +24,8 @@ return [
         'description4' => 'Reconstruction',
         'description5' => 'Independent examination',
         'description6' => 'Testing of the structures',
+    ],
+    'our-clients' => [
+        'title' => 'Our clients',
     ]
 ];

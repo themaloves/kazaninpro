@@ -8,10 +8,18 @@
         display: flex
         min-height: 100vh
 
+        @media #{$table}
+            flex-direction: column
+
     &__item
         flex: 1
         max-width: 600px
         display: flex
+
+        @media #{$table}
+            max-width: 100%
+            margin: 0
+            padding: 0 32px
 
         &:nth-child(1)
             margin-left: auto
@@ -48,6 +56,9 @@
         top: 0
         border-bottom-left-radius: 190px
 
+        @media #{$table}
+            display: none
+
     &__column
         width: 100%
         display: flex
@@ -81,8 +92,6 @@
 
         @media #{$phone}
             padding-top: 16px
-
-
 
     &__title
         @extend .h2

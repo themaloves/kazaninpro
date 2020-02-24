@@ -1,20 +1,48 @@
 <div class="our-clients inner-content">
-    <h2 class="our-clients__title">Наши Клиенты</h2>
+    <h2 class="our-clients__title">{{ __('about-as.our-clients.title') }}</h2>
 
     <div class="our-clients__items">
-        <div class="our-clients__item">1</div>
-        <div class="our-clients__item">2</div>
-        <div class="our-clients__item">3</div>
-        <div class="our-clients__item">4</div>
-        <div class="our-clients__item">5</div>
-        <div class="our-clients__item">6</div>
-        <div class="our-clients__item">7</div>
-        <div class="our-clients__item">8</div>
-        <div class="our-clients__item">9</div>
-        <div class="our-clients__item">10</div>
-        <div class="our-clients__item">11</div>
-        <div class="our-clients__item">12</div>
-        <div class="our-clients__item">13</div>
-        <div class="our-clients__item">14</div>
+        <div class="our-clients__item">
+            <img src="/images/about-us/rostelecom.png" alt="">
+        </div>
+        <div class="our-clients__item">
+            <img src="/images/about-us/tatneft.png" alt="">
+        </div>
+        <div class="our-clients__item">
+            <img src="/images/about-us/masstar.png" alt="">
+        </div>
+        <div class="our-clients__item">
+            <img src="/images/about-us/akbars.png" alt="">
+        </div>
+        <div class="our-clients__item">
+            <img src="/images/about-us/aksolut.png" alt="">
+        </div>
+        <div class="our-clients__item">
+            <img src="/images/about-us/magistral.png" alt="">
+        </div>
+        <div class="our-clients__item">
+            <img src="/images/about-us/ikea.png" alt="">
+        </div>
+        <div class="our-clients__item">
+            <img src="/images/about-us/buket.png" alt="">
+        </div>
+        <div class="our-clients__item">
+            <img src="/images/about-us/neft.png" alt="">
+        </div>
+        <div class="our-clients__item">
+            <img src="/images/about-us/nuriev.png" alt="">
+        </div>
+        <div class="our-clients__item">
+            <img src="/images/about-us/eko.png" alt="">
+        </div>
+        <div class="our-clients__item">
+            <img src="/images/about-us/kfc.png" alt="">
+        </div>
+        <div class="our-clients__item">
+            <img src="/images/about-us/innopolis.png" alt="">
+        </div>
+        <div class="our-clients__item">
+            <img src="/images/about-us/yit.png" alt="">
+        </div>
     </div>
 </div>

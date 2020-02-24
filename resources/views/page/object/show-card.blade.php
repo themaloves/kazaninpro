@@ -28,9 +28,9 @@
 
             </div>
             <div class="card-show__item">
-                <div class="card-show__picture-collection">
+                <div class="card-show__picture-collection imglist">
                     @foreach($card->attachment as $attachment)
-                        <img class="card-show__image" src="{{ $attachment->url() }}" alt="">
+                        <img src="{{ $attachment->url() }}" class="card-show__image">
                     @endforeach
                 </div>
 

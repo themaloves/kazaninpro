@@ -32651,22 +32651,20 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var fancybox__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! fancybox */ "./node_modules/fancybox/dist/js/jquery.fancybox.cjs.js");
+/* harmony import */ var fancybox__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(fancybox__WEBPACK_IMPORTED_MODULE_1__);
 
-window.jQuery = jquery__WEBPACK_IMPORTED_MODULE_0___default.a;
-
-__webpack_require__(/*! fancybox */ "./node_modules/fancybox/dist/js/jquery.fancybox.cjs.js");
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
   var $parentContainer = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.card-show__items'),
-      $pictureCollection = $parentContainer.find('.card-show__picture-collection');
-
-  if (window.matchMedia('(max-width: 1199px)').matches) {
-    var moveSelector = $pictureCollection.detach();
-    console.log(moveSelector);
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.card-show__text-container').append(moveSelector);
-  }
-
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".fancybox").fancybox();
+      $pictureCollection = $parentContainer.find('.card-show__picture-collection'); // if (window.matchMedia('(max-width: 1199px)').matches) {
+  //     let moveSelector = $pictureCollection.detach();
+  //
+  //     console.log(moveSelector);
+  //
+  //     $('.card-show__text-container').append(moveSelector);
+  //
+  // }
 });
 
 /***/ }),

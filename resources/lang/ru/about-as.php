@@ -24,5 +24,8 @@ return [
         'description4' => 'Реконструкция',
         'description5' => 'Независимая экспертиза',
         'description6' => 'Испытание кострукций',
+    ],
+    'our-clients' => [
+        'title' => 'Наши клиенты',
     ]
 ];
